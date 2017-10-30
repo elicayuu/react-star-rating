@@ -102,8 +102,8 @@ const selectedKeyframe = keyframes`
 const StyledStarRating = styled(StarRating) `
   .StarRating__star {
     display: inline-block;
-    width: ${props => `${props.size}px` || '24px'};
-    height: ${props => `${props.size}px` || '24px'};
+    width: ${props => props.size || 24}px;
+    height: ${props => props.size || 24}px;
     fill: #ddd;
     cursor: pointer;
     transform: scale(1);
